@@ -1,22 +1,22 @@
 {
   "sources": [
-    {
-      "name": "Paul Graham",
-      "rss": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
-      "fetchFullContent": false,
-      "max": 5
-    },
-    {
-      "name": "Aeon",
-      "rss": "https://aeon.co/feed.atom",
-      "fetchFullContent": true,
-      "max": 5
-    },
-    {
-      "name": "LessWrong Curated",
-      "rss": "https://www.lesswrong.com/feed.xml?view=curated-rss",
-      "fetchFullContent": false,
-      "max": 5
-    }
+    { "name": "Paul Graham", "rss": "http://www.aaronsw.com/2002/feeds/pgessays.rss", "fetchFullContent": false, "max": 5 },
+    { "name": "Aeon", "rss": "https://aeon.co/feed.atom", "fetchFullContent": true, "max": 5 },
+    { "name": "LessWrong Curated", "rss": "https://www.lesswrong.com/feed.xml?view=curated-rss", "fetchFullContent": false, "max": 5 },
+
+    { "name": "Stratechery", "rss": "https://stratechery.com/feed/", "fetchFullContent": true, "max": 4 },
+    { "name": "Farnam Street", "rss": "https://fs.blog/feed/", "fetchFullContent": false, "max": 4 },
+    { "name": "Seth Godin", "rss": "https://seths.blog/feed/", "fetchFullContent": false, "max": 5 },
+    { "name": "Derek Sivers", "rss": "https://sive.rs/en.atom", "fetchFullContent": false, "max": 5 },
+    { "name": "Marginal Revolution", "rss": "https://marginalrevolution.com/feed", "fetchFullContent": false, "max": 4 },
+
+    { "name": "BBC Politics", "rss": "https://feeds.bbci.co.uk/news/politics/rss.xml", "fetchFullContent": true, "max": 3 },
+    { "name": "The Guardian US Politics", "rss": "https://www.theguardian.com/us-news/us-politics/rss", "fetchFullContent": true, "max": 3 },
+
+    { "name": "NPR Business", "rss": "https://feeds.npr.org/1006/rss.xml", "fetchFullContent": true, "max": 3 },
+    { "name": "BBC Business", "rss": "https://feeds.bbci.co.uk/news/business/rss.xml", "fetchFullContent": true, "max": 3 },
+
+    { "name": "Ars Technica", "rss": "https://feeds.arstechnica.com/arstechnica/index", "fetchFullContent": false, "max": 3 },
+    { "name": "The Verge", "rss": "https://www.theverge.com/rss/index.xml", "fetchFullContent": true, "max": 3 }
   ]
 }
