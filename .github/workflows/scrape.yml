@@ -2,7 +2,9 @@ name: Scrape articles
 
 on:
   schedule:
-    - cron: '15 6 * * *'   # daily 06:15 UTC (~14:15 China time)
+    # Singapore = UTC+8. No DST.
+    - cron: '0 23 * * *'   # 07:00 SGT (23:00 UTC previous day)
+    - cron: '0 9 * * *'    # 17:00 SGT (09:00 UTC)
   workflow_dispatch:
 
 permissions:
