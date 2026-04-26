@@ -1,0 +1,37 @@
+name: Scrape articles
+
+on:
+  schedule:
+    - cron: '15 6 * * *'   # daily 06:15 UTC (~14:15 China time)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm install
+
+      - name: Run scraper
+        run: npm run fetch
+
+      - name: Commit if changed
+        run: |
+          git config user.name "english-learner-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain articles.json)" ]; then
+            git add articles.json
+            git commit -m "scrape: $(date -u +%Y-%m-%d) — $(jq '.article_count' articles.json) total"
+            git push
+          else
+            echo "No changes."
+          fi

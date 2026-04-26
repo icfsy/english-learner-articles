@@ -1,0 +1,15 @@
+{
+  "name": "english-learner-articles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch.js"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "jsdom": "^24.1.1",
+    "rss-parser": "^3.13.0",
+    "sanitize-html": "^2.13.0"
+  }
+}

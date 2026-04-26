@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "name": "Paul Graham",
+      "rss": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+      "fetchFullContent": false,
+      "max": 5
+    },
+    {
+      "name": "Aeon",
+      "rss": "https://aeon.co/feed.atom",
+      "fetchFullContent": true,
+      "max": 5
+    },
+    {
+      "name": "LessWrong Curated",
+      "rss": "https://www.lesswrong.com/feed.xml?view=curated-rss",
+      "fetchFullContent": false,
+      "max": 5
+    }
+  ]
+}
